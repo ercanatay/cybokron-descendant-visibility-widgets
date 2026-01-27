@@ -43,7 +43,7 @@ This plugin adds an **"Include all descendants"** option that includes ALL level
 - 👤 **User state**: Logged in / Logged out
 - 🔗 **Multiple conditions** with AND/OR logic
 - 🚀 **Jetpack-free** - no dependencies
-- 🌍 **Translation ready**
+- 🌍 **30 languages included**
 - 🔒 **Secure** - follows WordPress coding standards
 
 ## Installation
@@ -124,6 +124,10 @@ The visibility panel appears below each widget with:
 
 - WordPress 5.2 or higher
 - PHP 7.4 or higher
+
+## Supported Languages
+
+🇹🇷 Turkish, 🇺🇸 English, 🇪🇸 Spanish, 🇩🇪 German, 🇫🇷 French, 🇮🇹 Italian, 🇧🇷 Portuguese (Brazil), 🇵🇹 Portuguese (Portugal), 🇳🇱 Dutch, 🇵🇱 Polish, 🇷🇺 Russian, 🇯🇵 Japanese, 🇨🇳 Chinese (Simplified), 🇹🇼 Chinese (Traditional), 🇰🇷 Korean, 🇸🇦 Arabic, 🇮🇱 Hebrew, 🇸🇪 Swedish, 🇳🇴 Norwegian, 🇩🇰 Danish, 🇫🇮 Finnish, 🇬🇷 Greek, 🇨🇿 Czech, 🇭🇺 Hungarian, 🇷🇴 Romanian, 🇺🇦 Ukrainian, 🇻🇳 Vietnamese, 🇹🇭 Thai, 🇮🇩 Indonesian, 🇮🇳 Hindi, 🇸🇰 Slovak
 
 ## Frequently Asked Questions
 
