@@ -207,20 +207,42 @@ class WVD_Visibility_Admin {
             'rules' => [],
         ];
 
+        $allowed_types = [
+            'page', 'category', 'post_type', 'front_page', 'blog',
+            'archive', 'search', '404', 'single', 'logged_in', 'logged_out',
+            'taxonomy', 'author'
+        ];
+
         if (!empty($data['rules']) && is_array($data['rules'])) {
+            $count = 0;
             foreach ($data['rules'] as $rule) {
+                if ($count >= 50) {
+                    break;
+                }
+
                 if (!isset($rule['type']) || !isset($rule['value'])) {
                     continue;
                 }
 
+                $type = sanitize_key($rule['type']);
+                if (!in_array($type, $allowed_types, true)) {
+                    continue;
+                }
+
+                $value = sanitize_text_field($rule['value']);
+                if (strlen($value) > 100) {
+                    $value = substr($value, 0, 100);
+                }
+
                 $sanitized_rule = [
-                    'type' => sanitize_key($rule['type']),
-                    'value' => sanitize_text_field($rule['value']),
+                    'type' => $type,
+                    'value' => $value,
                     'include_children' => !empty($rule['include_children']),
                     'include_descendants' => !empty($rule['include_descendants']),
                 ];
 
                 $sanitized['rules'][] = $sanitized_rule;
+                $count++;
             }
         }
 
