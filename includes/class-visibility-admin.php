@@ -253,9 +253,14 @@ class WVD_Visibility_Admin {
                 }
 
                 // Sanitize and limit value length
-                $value = sanitize_text_field($rule['value']);
-                if (strlen($value) > $max_value_length) {
-                    $value = substr($value, 0, $max_value_length);
+                if (in_array($type, ['page', 'category', 'author'], true)) {
+                    $value = absint($rule['value']);
+                } else {
+                    $value = sanitize_text_field($rule['value']);
+                }
+
+                if (strlen((string) $value) > $max_value_length) {
+                    $value = substr((string) $value, 0, $max_value_length);
                 }
 
                 $sanitized_rule = [
