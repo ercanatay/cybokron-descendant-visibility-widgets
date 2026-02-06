@@ -246,19 +246,19 @@ class WVD_Visibility_Admin {
                     continue;
                 }
 
-                // Ensure type and value are strings
-                if (!is_string($rule['type']) || !is_string($rule['value'])) {
+                // Ensure type and value are scalar (disallow arrays/objects)
+                if (!is_scalar($rule['type']) || !is_scalar($rule['value'])) {
                     continue;
                 }
 
                 // Sanitize and validate type against whitelist
-                $type = sanitize_key($rule['type']);
+                $type = sanitize_key((string) $rule['type']);
                 if (!in_array($type, $allowed_types, true)) {
                     continue;
                 }
 
                 // Sanitize and limit value length
-                $value = sanitize_text_field($rule['value']);
+                $value = sanitize_text_field((string) $rule['value']);
                 if (strlen($value) > $max_value_length) {
                     $value = substr($value, 0, $max_value_length);
                 }
