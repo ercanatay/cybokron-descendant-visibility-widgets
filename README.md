@@ -4,7 +4,7 @@
 **Tags:** widget, visibility, descendants, grandchildren, pages
 **Requires at least:** 5.2
 **Tested up to:** 6.9
-**Stable tag:** 1.3.2
+**Stable tag:** 1.3.3
 **Requires PHP:** 7.4
 **License:** GPLv2 or later
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html
@@ -148,6 +148,12 @@ No. The visibility checks are very lightweight and only run when widgets are bei
 This plugin works with classic widgets. For block-based widget areas, the visibility controls appear in the widget settings.
 
 ## Changelog
+
+### 1.3.3 (2026-02-08)
+- Fix: Removed hidden tracked development artifact at `.jules/sentinel.md` to avoid hidden-file check warnings.
+- Fix: Normalized mixed line endings to LF in `README.md` and `assets/css/admin.css`.
+- i18n: Renamed translation files in `languages/` to `widget-visibility-descendants-main-*` so file names align with the active text domain.
+
 
 ### 1.3.2 (2026-02-08)
 - Fix: Standardized plugin text domain usage to `widget-visibility-descendants-main` across plugin headers and admin UI translation calls.
