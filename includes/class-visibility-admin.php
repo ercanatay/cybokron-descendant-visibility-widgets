@@ -58,38 +58,38 @@ class WVD_Visibility_Admin {
             'taxonomyTerms' => $this->get_taxonomy_terms($taxonomies),
             'roles' => $this->get_user_roles(),
             'i18n' => [
-                'visibility' => __('Visibility', 'widget-visibility-descendants'),
-                'show' => __('Show', 'widget-visibility-descendants'),
-                'hide' => __('Hide', 'widget-visibility-descendants'),
-                'if' => __('if', 'widget-visibility-descendants'),
-                'is' => __('is', 'widget-visibility-descendants'),
-                'page' => __('Page', 'widget-visibility-descendants'),
-                'category' => __('Category', 'widget-visibility-descendants'),
-                'postType' => __('Post Type', 'widget-visibility-descendants'),
-                'taxonomy' => __('Taxonomy', 'widget-visibility-descendants'),
-                'userRole' => __('User Role', 'widget-visibility-descendants'),
-                'frontPage' => __('Front Page', 'widget-visibility-descendants'),
-                'blog' => __('Blog', 'widget-visibility-descendants'),
-                'archive' => __('Archive', 'widget-visibility-descendants'),
-                'search' => __('Search', 'widget-visibility-descendants'),
-                'notFound' => __('404', 'widget-visibility-descendants'),
-                'single' => __('Single Post', 'widget-visibility-descendants'),
-                'loggedIn' => __('Logged In', 'widget-visibility-descendants'),
-                'loggedOut' => __('Logged Out', 'widget-visibility-descendants'),
-                'selectPostType' => __('Select a post type...', 'widget-visibility-descendants'),
-                'selectTaxonomy' => __('Select a taxonomy...', 'widget-visibility-descendants'),
-                'selectTerm' => __('Select a term...', 'widget-visibility-descendants'),
-                'selectRoles' => __('Select one or more roles...', 'widget-visibility-descendants'),
-                'configured' => __('Configured', 'widget-visibility-descendants'),
-                'includeChildren' => __('Include children', 'widget-visibility-descendants'),
-                'includeDescendants' => __('Include all descendants', 'widget-visibility-descendants'),
-                'matchAll' => __('Match all conditions', 'widget-visibility-descendants'),
-                'addCondition' => __('Add condition', 'widget-visibility-descendants'),
-                'remove' => __('Remove', 'widget-visibility-descendants'),
-                'done' => __('Done', 'widget-visibility-descendants'),
-                'delete' => __('Delete', 'widget-visibility-descendants'),
-                'selectPage' => __('Select a page...', 'widget-visibility-descendants'),
-                'selectCategory' => __('Select a category...', 'widget-visibility-descendants'),
+                'visibility' => __('Visibility', 'widget-visibility-descendants-main'),
+                'show' => __('Show', 'widget-visibility-descendants-main'),
+                'hide' => __('Hide', 'widget-visibility-descendants-main'),
+                'if' => __('if', 'widget-visibility-descendants-main'),
+                'is' => __('is', 'widget-visibility-descendants-main'),
+                'page' => __('Page', 'widget-visibility-descendants-main'),
+                'category' => __('Category', 'widget-visibility-descendants-main'),
+                'postType' => __('Post Type', 'widget-visibility-descendants-main'),
+                'taxonomy' => __('Taxonomy', 'widget-visibility-descendants-main'),
+                'userRole' => __('User Role', 'widget-visibility-descendants-main'),
+                'frontPage' => __('Front Page', 'widget-visibility-descendants-main'),
+                'blog' => __('Blog', 'widget-visibility-descendants-main'),
+                'archive' => __('Archive', 'widget-visibility-descendants-main'),
+                'search' => __('Search', 'widget-visibility-descendants-main'),
+                'notFound' => __('404', 'widget-visibility-descendants-main'),
+                'single' => __('Single Post', 'widget-visibility-descendants-main'),
+                'loggedIn' => __('Logged In', 'widget-visibility-descendants-main'),
+                'loggedOut' => __('Logged Out', 'widget-visibility-descendants-main'),
+                'selectPostType' => __('Select a post type...', 'widget-visibility-descendants-main'),
+                'selectTaxonomy' => __('Select a taxonomy...', 'widget-visibility-descendants-main'),
+                'selectTerm' => __('Select a term...', 'widget-visibility-descendants-main'),
+                'selectRoles' => __('Select one or more roles...', 'widget-visibility-descendants-main'),
+                'configured' => __('Configured', 'widget-visibility-descendants-main'),
+                'includeChildren' => __('Include children', 'widget-visibility-descendants-main'),
+                'includeDescendants' => __('Include all descendants', 'widget-visibility-descendants-main'),
+                'matchAll' => __('Match all conditions', 'widget-visibility-descendants-main'),
+                'addCondition' => __('Add condition', 'widget-visibility-descendants-main'),
+                'remove' => __('Remove', 'widget-visibility-descendants-main'),
+                'done' => __('Done', 'widget-visibility-descendants-main'),
+                'delete' => __('Delete', 'widget-visibility-descendants-main'),
+                'selectPage' => __('Select a page...', 'widget-visibility-descendants-main'),
+                'selectCategory' => __('Select a category...', 'widget-visibility-descendants-main'),
             ]
         ]);
     }
@@ -341,10 +341,10 @@ class WVD_Visibility_Admin {
         <div class="wvd-visibility-wrapper" data-widget-id="<?php echo esc_attr($widget_id); ?>">
             <p class="wvd-visibility-toggle">
                 <button type="button" class="button wvd-visibility-button">
-                    <?php esc_html_e('Visibility', 'widget-visibility-descendants'); ?>
+                    <?php esc_html_e('Visibility', 'widget-visibility-descendants-main'); ?>
                 </button>
                 <?php if (!empty($visibility['rules'])): ?>
-                    <span class="wvd-visibility-status wvd-has-rules"><?php esc_html_e('Configured', 'widget-visibility-descendants'); ?></span>
+                    <span class="wvd-visibility-status wvd-has-rules"><?php esc_html_e('Configured', 'widget-visibility-descendants-main'); ?></span>
                 <?php endif; ?>
             </p>
 

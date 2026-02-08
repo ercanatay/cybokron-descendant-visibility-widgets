@@ -4,7 +4,7 @@
 **Tags:** widget, visibility, descendants, grandchildren, pages
 **Requires at least:** 5.2
 **Tested up to:** 6.9
-**Stable tag:** 1.3.1
+**Stable tag:** 1.3.2
 **Requires PHP:** 7.4
 **License:** GPLv2 or later
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html
@@ -148,6 +148,11 @@ No. The visibility checks are very lightweight and only run when widgets are bei
 This plugin works with classic widgets. For block-based widget areas, the visibility controls appear in the widget settings.
 
 ## Changelog
+
+### 1.3.2 (2026-02-08)
+- Fix: Standardized plugin text domain usage to `widget-visibility-descendants-main` across plugin headers and admin UI translation calls.
+- Fix: Normalized `grandchildren-visibility.php` to LF line endings to prevent mixed EOL warnings.
+- Fix: Removed root `.gitignore` from distributable plugin files to satisfy hidden-file checks.
 
 ### 1.3.1 (2026-02-08)
 - Fix: Improved category rule evaluation robustness for single posts ([PR #19](https://github.com/ercanatay/widget-visibility-descendants/pull/19)).
