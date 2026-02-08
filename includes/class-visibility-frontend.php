@@ -220,8 +220,17 @@ class WVD_Visibility_Frontend {
 
         // Check if viewing single post in category
         if (is_single()) {
-            $post_categories = wp_get_post_categories(get_the_ID());
+            $post_id = get_queried_object_id();
+            if (!$post_id) {
+                return false;
+            }
 
+            $post_categories = wp_get_post_categories($post_id);
+            if (is_wp_error($post_categories) || !is_array($post_categories) || empty($post_categories)) {
+                return false;
+            }
+
+            $post_categories = array_map('intval', $post_categories);
             if (in_array($cat_id, $post_categories, true)) {
                 return true;
             }
