@@ -4,8 +4,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Widget Visibility with Descendants 1.0.0\n"
-"Report-Msgid-Bugs-To: https://github.com/ercanatay/widget-visibility-descendants/issues\n"
-"POT-Creation-Date: 2025-01-27 00:00:00+00:00\n"
+"Report-Msgid-Bugs-To: https://github.com/ercanatay/widget-visibility-"
+"descendants/issues\n"
+"POT-Creation-Date: 2026-02-09 00:00:00+00:00\n"
 "PO-Revision-Date: 2025-01-27 00:00:00+00:00\n"
 "Last-Translator: Ercan ATAY\n"
 "Language-Team: Turkish\n"
@@ -15,62 +16,182 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: includes/class-visibility-admin.php
 msgid "Visibility"
 msgstr "Görünürlük"
 
+#: includes/class-visibility-admin.php
 msgid "Show"
 msgstr "Göster"
 
+#: includes/class-visibility-admin.php
 msgid "Hide"
 msgstr "Gizle"
 
+#: includes/class-visibility-admin.php
 msgid "if"
 msgstr "eğer"
 
+#: includes/class-visibility-admin.php
 msgid "is"
 msgstr "ise"
 
+#: includes/class-visibility-admin.php
 msgid "Page"
 msgstr "Sayfa"
 
+#: includes/class-visibility-admin.php
 msgid "Category"
 msgstr "Kategori"
 
+#: includes/class-visibility-admin.php
 msgid "Post Type"
 msgstr "Yazı Türü"
 
+#: includes/class-visibility-admin.php
 msgid "Taxonomy"
 msgstr "Taksonomi"
 
-msgid "Author"
-msgstr "Yazar"
+#: includes/class-visibility-admin.php
+msgid "User Role"
+msgstr "Kullanıcı Rolü"
 
+#: includes/class-visibility-admin.php
+msgid "Front Page"
+msgstr "Ana Sayfa"
+
+#: includes/class-visibility-admin.php
+msgid "Blog"
+msgstr "Blog"
+
+#: includes/class-visibility-admin.php
+msgid "Archive"
+msgstr "Arşiv"
+
+#: includes/class-visibility-admin.php
+msgid "Search"
+msgstr "Arama"
+
+#: includes/class-visibility-admin.php
+msgid "404"
+msgstr "404"
+
+#: includes/class-visibility-admin.php
+msgid "Single Post"
+msgstr "Tekil Yazı"
+
+#: includes/class-visibility-admin.php
+msgid "Logged In"
+msgstr "Giriş Yapmış"
+
+#: includes/class-visibility-admin.php
+msgid "Logged Out"
+msgstr "Giriş Yapmamış"
+
+#: includes/class-visibility-admin.php
+msgid "Select a post type..."
+msgstr "Bir yazı türü seçin..."
+
+#: includes/class-visibility-admin.php
+msgid "Select a taxonomy..."
+msgstr "Bir taksonomi seçin..."
+
+#: includes/class-visibility-admin.php
+msgid "Select a term..."
+msgstr "Bir terim seçin..."
+
+#: includes/class-visibility-admin.php
+msgid "Select one or more roles..."
+msgstr "Bir veya daha fazla rol seçin..."
+
+#: includes/class-visibility-admin.php
 msgid "Include children"
 msgstr "Alt sayfaları dahil et"
 
+#: includes/class-visibility-admin.php
 msgid "Include all descendants"
 msgstr "Tüm alt sayfaları dahil et"
 
+#: includes/class-visibility-admin.php
 msgid "Match all conditions"
 msgstr "Tüm koşulları eşleştir"
 
+#: includes/class-visibility-admin.php
 msgid "Add condition"
 msgstr "Koşul ekle"
 
+#: includes/class-visibility-admin.php
 msgid "Remove"
 msgstr "Kaldır"
 
+#: includes/class-visibility-admin.php
 msgid "Done"
 msgstr "Tamam"
 
+#: includes/class-visibility-admin.php
 msgid "Delete"
 msgstr "Sil"
 
+#: includes/class-visibility-admin.php
 msgid "Select a page..."
 msgstr "Sayfa seçin..."
 
+#: includes/class-visibility-admin.php
 msgid "Select a category..."
 msgstr "Kategori seçin..."
 
+#: includes/class-visibility-admin.php
 msgid "Configured"
 msgstr "Yapılandırıldı"
+
+#: includes/class-updater-settings.php
+msgid "Widget Visibility Updates"
+msgstr "Widget Görünürlük Güncellemeleri"
+
+#: includes/class-updater-settings.php
+msgid "Update Settings"
+msgstr "Güncelleme Ayarları"
+
+#: includes/class-updater-settings.php
+msgid "Installed version: %s"
+msgstr "Kurulu sürüm: %s"
+
+#: includes/class-updater-settings.php
+msgid "Enable GitHub updates"
+msgstr "GitHub güncellemelerini etkinleştir"
+
+#: includes/class-updater-settings.php
+msgid "Check GitHub releases and deliver updates through WordPress updater."
+msgstr "GitHub sürümlerini kontrol et ve güncellemeleri WordPress güncelleyicisi üzerinden sun."
+
+#: includes/class-updater-settings.php
+msgid "Update channel"
+msgstr "Güncelleme kanalı"
+
+#: includes/class-updater-settings.php
+msgid "Stable (recommended)"
+msgstr "Kararlı (önerilen)"
+
+#: includes/class-updater-settings.php
+msgid "Beta (includes prereleases)"
+msgstr "Beta (ön sürümler dahil)"
+
+#: includes/class-updater-settings.php
+msgid "Choose which GitHub releases are eligible for updates."
+msgstr "Güncelleme için uygun GitHub sürümlerini seçin."
+
+#: includes/class-github-updater.php
+msgid "No release notes available."
+msgstr "Yayın notu yok."
+
+#: includes/class-github-updater.php
+msgid ""
+"Control widget visibility based on pages, posts, categories with full "
+"descendant support."
+msgstr ""
+"Bileşen görünürlüğünü sayfa, yazı ve kategorilere göre tüm alt düzey "
+"desteğiyle kontrol edin."
+
+#: includes/class-github-updater.php
+msgid "Could not prepare the GitHub update package for installation."
+msgstr "GitHub güncelleme paketi kurulum için hazırlanamadı."

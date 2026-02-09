@@ -4,7 +4,7 @@
 **Tags:** widget, visibility, descendants, grandchildren, pages
 **Requires at least:** 5.2
 **Tested up to:** 6.9
-**Stable tag:** 1.4.0
+**Stable tag:** 1.4.1
 **Requires PHP:** 7.4
 **License:** GPLv2 or later
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html
@@ -160,6 +160,12 @@ No. The visibility checks are very lightweight and only run when widgets are bei
 This plugin works with classic widgets. For block-based widget areas, the visibility controls appear in the widget settings.
 
 ## Changelog
+
+### 1.4.1 (2026-02-09)
+- Security: Ensured widget visibility sanitization is always initialized for REST widget updates, preventing `is_admin()` context bypasses.
+- i18n: Synced all `.po` catalogs with the latest `.pot` template and removed obsolete translation keys.
+- i18n: Added fallback translations for newly introduced updater strings across language files and completed Turkish translations for updater text.
+- i18n: Recompiled all `.mo` binaries from updated `.po` sources.
 
 ### 1.4.0 (2026-02-09)
 - Feature: Added GitHub updater integration using WordPress native plugin update flow.

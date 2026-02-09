@@ -2,7 +2,7 @@
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Widget Visibility with Descendants 1.4.0\n"
+"Project-Id-Version: Widget Visibility with Descendants 1.4.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ercanatay/widget-visibility-descendants/issues\n"
 "POT-Creation-Date: 2026-02-09 00:00:00+00:00\n"
 "MIME-Version: 1.0\n"

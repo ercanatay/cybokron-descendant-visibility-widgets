@@ -2,67 +2,190 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Widget Visibility with Descendants 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/ercanatay/widget-visibility-"
+"descendants/issues\n"
+"POT-Creation-Date: 2026-02-09 00:00:00+00:00\n"
 "Language: sk_SK\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: includes/class-visibility-admin.php
 msgid "Visibility"
 msgstr "Viditeľnosť"
 
+#: includes/class-visibility-admin.php
 msgid "Show"
 msgstr "Zobraziť"
 
+#: includes/class-visibility-admin.php
 msgid "Hide"
 msgstr "Skryť"
 
+#: includes/class-visibility-admin.php
 msgid "if"
 msgstr "ak"
 
+#: includes/class-visibility-admin.php
 msgid "is"
 msgstr "je"
 
+#: includes/class-visibility-admin.php
 msgid "Page"
 msgstr "Stránka"
 
+#: includes/class-visibility-admin.php
 msgid "Category"
 msgstr "Kategória"
 
+#: includes/class-visibility-admin.php
 msgid "Post Type"
 msgstr "Typ príspevku"
 
+#: includes/class-visibility-admin.php
 msgid "Taxonomy"
 msgstr "Taxonómia"
 
-msgid "Author"
-msgstr "Autor"
+#: includes/class-visibility-admin.php
+msgid "User Role"
+msgstr "User Role"
 
+#: includes/class-visibility-admin.php
+msgid "Front Page"
+msgstr "Front Page"
+
+#: includes/class-visibility-admin.php
+msgid "Blog"
+msgstr "Blog"
+
+#: includes/class-visibility-admin.php
+msgid "Archive"
+msgstr "Archive"
+
+#: includes/class-visibility-admin.php
+msgid "Search"
+msgstr "Search"
+
+#: includes/class-visibility-admin.php
+msgid "404"
+msgstr "404"
+
+#: includes/class-visibility-admin.php
+msgid "Single Post"
+msgstr "Single Post"
+
+#: includes/class-visibility-admin.php
+msgid "Logged In"
+msgstr "Logged In"
+
+#: includes/class-visibility-admin.php
+msgid "Logged Out"
+msgstr "Logged Out"
+
+#: includes/class-visibility-admin.php
+msgid "Select a post type..."
+msgstr "Select a post type..."
+
+#: includes/class-visibility-admin.php
+msgid "Select a taxonomy..."
+msgstr "Select a taxonomy..."
+
+#: includes/class-visibility-admin.php
+msgid "Select a term..."
+msgstr "Select a term..."
+
+#: includes/class-visibility-admin.php
+msgid "Select one or more roles..."
+msgstr "Select one or more roles..."
+
+#: includes/class-visibility-admin.php
 msgid "Include children"
 msgstr "Zahrnúť podstránky"
 
+#: includes/class-visibility-admin.php
 msgid "Include all descendants"
 msgstr "Zahrnúť všetkých potomkov"
 
+#: includes/class-visibility-admin.php
 msgid "Match all conditions"
 msgstr "Splniť všetky podmienky"
 
+#: includes/class-visibility-admin.php
 msgid "Add condition"
 msgstr "Pridať podmienku"
 
+#: includes/class-visibility-admin.php
 msgid "Remove"
 msgstr "Odstrániť"
 
+#: includes/class-visibility-admin.php
 msgid "Done"
 msgstr "Hotovo"
 
+#: includes/class-visibility-admin.php
 msgid "Delete"
 msgstr "Zmazať"
 
+#: includes/class-visibility-admin.php
 msgid "Select a page..."
 msgstr "Vyberte stránku..."
 
+#: includes/class-visibility-admin.php
 msgid "Select a category..."
 msgstr "Vyberte kategóriu..."
 
+#: includes/class-visibility-admin.php
 msgid "Configured"
 msgstr "Nakonfigurované"
+
+#: includes/class-updater-settings.php
+msgid "Widget Visibility Updates"
+msgstr "Widget Visibility Updates"
+
+#: includes/class-updater-settings.php
+msgid "Update Settings"
+msgstr "Update Settings"
+
+#: includes/class-updater-settings.php
+msgid "Installed version: %s"
+msgstr "Installed version: %s"
+
+#: includes/class-updater-settings.php
+msgid "Enable GitHub updates"
+msgstr "Enable GitHub updates"
+
+#: includes/class-updater-settings.php
+msgid "Check GitHub releases and deliver updates through WordPress updater."
+msgstr "Check GitHub releases and deliver updates through WordPress updater."
+
+#: includes/class-updater-settings.php
+msgid "Update channel"
+msgstr "Update channel"
+
+#: includes/class-updater-settings.php
+msgid "Stable (recommended)"
+msgstr "Stable (recommended)"
+
+#: includes/class-updater-settings.php
+msgid "Beta (includes prereleases)"
+msgstr "Beta (includes prereleases)"
+
+#: includes/class-updater-settings.php
+msgid "Choose which GitHub releases are eligible for updates."
+msgstr "Choose which GitHub releases are eligible for updates."
+
+#: includes/class-github-updater.php
+msgid "No release notes available."
+msgstr "No release notes available."
+
+#: includes/class-github-updater.php
+msgid ""
+"Control widget visibility based on pages, posts, categories with full "
+"descendant support."
+msgstr ""
+"Control widget visibility based on pages, posts, categories with full "
+"descendant support."
+
+#: includes/class-github-updater.php
+msgid "Could not prepare the GitHub update package for installation."
+msgstr "Could not prepare the GitHub update package for installation."
