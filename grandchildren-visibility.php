@@ -92,9 +92,11 @@ final class Widget_Visibility_Descendants {
         // Load translations
         add_action('plugins_loaded', array($this, 'load_textdomain'));
 
-        // Initialize admin
+        // Initialize data handling hooks (must also run for REST widget updates).
+        new WVD_Visibility_Admin();
+
+        // Initialize settings UI only for wp-admin requests.
         if (is_admin()) {
-            new WVD_Visibility_Admin();
             new WVD_Updater_Settings();
         }
 
