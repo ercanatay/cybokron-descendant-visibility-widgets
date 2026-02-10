@@ -386,6 +386,11 @@ class WVD_Visibility_Admin {
      * Save visibility settings
      */
     public function save_visibility_settings($instance, $new_instance, $old_instance, $widget) {
+        // Defensive check: avoid offset assignment on non-array instances.
+        if (!is_array($instance)) {
+            return $instance;
+        }
+
         // Security: Verify user has permission to manage widgets
         if (!current_user_can('edit_theme_options')) {
             return $instance;
