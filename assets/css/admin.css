@@ -83,14 +83,30 @@
     margin-bottom: 0;
 }
 
+/* Button-like Actions */
+.wvd-rule-remove,
+.wvd-add-rule,
+.wvd-delete-rules {
+    background: transparent;
+    border: 0;
+    border-radius: 2px;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+
 /* Remove Button */
 .wvd-rule-remove {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: #a00;
     cursor: pointer;
     font-size: 18px;
     line-height: 1;
+    min-height: 24px;
+    min-width: 24px;
     padding: 5px;
-    text-decoration: none;
 }
 
 .wvd-rule-remove:hover {
@@ -177,9 +193,9 @@
     align-items: center;
     gap: 5px;
     color: #0073aa;
+    cursor: pointer;
     text-decoration: none;
     font-size: 13px;
-    cursor: pointer;
 }
 
 .wvd-add-rule:hover {
@@ -221,6 +237,7 @@
 
 .wvd-delete-rules {
     color: #a00;
+    cursor: pointer;
     text-decoration: none;
     font-size: 12px;
 }
@@ -228,6 +245,13 @@
 .wvd-delete-rules:hover {
     color: #dc3232;
     text-decoration: underline;
+}
+
+.wvd-rule-remove:focus-visible,
+.wvd-add-rule:focus-visible,
+.wvd-delete-rules:focus-visible {
+    box-shadow: 0 0 0 2px #2271b1;
+    outline: 2px solid transparent;
 }
 
 .wvd-done-button {

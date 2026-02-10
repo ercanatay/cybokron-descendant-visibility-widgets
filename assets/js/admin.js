@@ -82,8 +82,8 @@
         }
         html += '</div>';
 
-        // Add condition link
-        html += '<a href="#" class="wvd-add-rule">' + escapeHtml(wvdData.i18n.addCondition) + '</a>';
+        // Add condition button
+        html += '<button type="button" class="wvd-add-rule">' + escapeHtml(wvdData.i18n.addCondition) + '</button>';
 
         // Match all checkbox
         html += '<div class="wvd-match-all">';
@@ -95,7 +95,7 @@
 
         // Footer
         html += '<div class="wvd-panel-footer">';
-        html += '<a href="#" class="wvd-delete-rules">' + escapeHtml(wvdData.i18n.delete) + '</a>';
+        html += '<button type="button" class="wvd-delete-rules">' + escapeHtml(wvdData.i18n.delete) + '</button>';
         html += '<button type="button" class="button wvd-done-button">' + escapeHtml(wvdData.i18n.done) + '</button>';
         html += '</div>';
 
@@ -117,7 +117,7 @@
         var html = '<div class="wvd-rule" data-index="' + index + '">';
 
         // Remove button
-        html += '<a href="#" class="wvd-rule-remove" title="' + escapeHtml(wvdData.i18n.remove) + '">&times;</a>';
+        html += '<button type="button" class="wvd-rule-remove" aria-label="' + escapeHtml(wvdData.i18n.remove) + '" title="' + escapeHtml(wvdData.i18n.remove) + '">&times;</button>';
 
         // Type select
         html += '<select class="wvd-rule-type">';
@@ -373,8 +373,7 @@
         });
 
         // Add rule
-        $content.on('click', '.wvd-add-rule', function(e) {
-            e.preventDefault();
+        $content.on('click', '.wvd-add-rule', function() {
             var $rules = $content.find('.wvd-rules');
             var index = $rules.find('.wvd-rule').length;
             $rules.append(renderRule(getDefaultRule('page'), index));
@@ -382,15 +381,13 @@
         });
 
         // Remove rule
-        $content.on('click', '.wvd-rule-remove', function(e) {
-            e.preventDefault();
+        $content.on('click', '.wvd-rule-remove', function() {
             $(this).closest('.wvd-rule').remove();
             updateData($content, $dataInput);
         });
 
         // Delete all rules
-        $content.on('click', '.wvd-delete-rules', function(e) {
-            e.preventDefault();
+        $content.on('click', '.wvd-delete-rules', function() {
             $content.find('.wvd-rules').empty();
             updateData($content, $dataInput);
             updateStatus($wrapper, false);

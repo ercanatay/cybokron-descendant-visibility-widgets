@@ -4,7 +4,7 @@
 **Tags:** widget, visibility, descendants, grandchildren, pages
 **Requires at least:** 5.2
 **Tested up to:** 6.9
-**Stable tag:** 1.4.2
+**Stable tag:** 1.4.3
 **Requires PHP:** 7.4
 **License:** GPLv2 or later
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html
@@ -148,6 +148,11 @@ No. The visibility checks are very lightweight and only run when widgets are bei
 This plugin works with classic widgets. For block-based widget areas, the visibility controls appear in the widget settings.
 
 ## Changelog
+
+### 1.4.3 (2026-02-10)
+- Accessibility: Converted visibility panel action controls (`Remove`, `Add condition`, `Delete`) from anchor tags to semantic `button` elements.
+- Accessibility: Added `aria-label` to icon-only remove control to improve screen-reader support.
+- Accessibility: Added keyboard-visible focus styles for action controls.
 
 ### 1.4.2 (2026-02-10)
 - Compliance: Removed custom GitHub updater integration to satisfy WordPress.org plugin directory rules.
