@@ -4,7 +4,7 @@
 **Tags:** widget, visibility, descendants, grandchildren, pages
 **Requires at least:** 5.2
 **Tested up to:** 6.9
-**Stable tag:** 1.4.5
+**Stable tag:** 1.4.6
 **Requires PHP:** 7.4
 **License:** GPLv2 or later
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html
@@ -148,6 +148,11 @@ No. The visibility checks are very lightweight and only run when widgets are bei
 This plugin works with classic widgets. For block-based widget areas, the visibility controls appear in the widget settings.
 
 ## Changelog
+
+### 1.4.6 (2026-02-11)
+- Docs: Reviewed recent merged PRs and synchronized release notes for maintainers.
+- Maintenance: Added explicit PR references to latest stabilization and compliance work ([PR #25](https://github.com/ercanatay/widget-visibility-descendants/pull/25), [PR #24](https://github.com/ercanatay/widget-visibility-descendants/pull/24)).
+- Review: Confirmed there are no currently open pull requests pending merge.
 
 ### 1.4.5 (2026-02-10)
 - Fix: Added defensive `is_array()` validation for widget instance payloads in both admin save and frontend display callbacks.
