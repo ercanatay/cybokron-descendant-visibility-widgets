@@ -4,7 +4,7 @@
 **Tags:** widget, visibility, descendants, grandchildren, pages
 **Requires at least:** 5.2
 **Tested up to:** 6.9
-**Stable tag:** 1.4.6
+**Stable tag:** 1.4.7
 **Requires PHP:** 7.4
 **License:** GPLv2 or later
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html
@@ -148,6 +148,10 @@ No. The visibility checks are very lightweight and only run when widgets are bei
 This plugin works with classic widgets. For block-based widget areas, the visibility controls appear in the widget settings.
 
 ## Changelog
+
+### 1.4.7 (2026-02-13)
+- Security: Restricted widget visibility UI rendering to users with `edit_theme_options`.
+- Security: Prevented visibility data loss by restoring previous `wvd_visibility` settings when unauthorized users trigger widget updates.
 
 ### 1.4.6 (2026-02-11)
 - Docs: Reviewed recent merged PRs and synchronized release notes for maintainers.
